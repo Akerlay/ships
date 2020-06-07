@@ -52,7 +52,7 @@ async def cors_middleware(app: web.Application, handler):
 
 async def init_app():
     app = web.Application(middlewares=[cors_middleware])
-    red = await aioredis.create_redis_pool('redis://0.0.0.0:6379/10')
+    red = await aioredis.create_redis_pool('redis://45.86.182.252:6379/10')
 
     app['redis'] = red
 
