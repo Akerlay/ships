@@ -23,7 +23,7 @@ const HelloWorld = (propesi) => {
 
     let timerId = setTimeout(() => {
         if(tValue != value) {
-              let chtototam = fetch('http://192.168.1.80:8080/data', {
+              let chtototam = fetch('/api/data', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',

@@ -14,7 +14,7 @@ while True:
     idx_to_key[i] = f"ship_data:{current_date.isoformat().replace(':', '_')}"
 
     current_date += timedelta(minutes=30)
-    i+=1
+    i += 1
     if current_date > datetime(2020, 3, 11):
         break
 
@@ -52,17 +52,15 @@ async def cors_middleware(app: web.Application, handler):
 
 async def init_app():
     app = web.Application(middlewares=[cors_middleware])
-    red = await aioredis.create_redis_pool('redis://127.0.0.1:6379/0')
+    red = await aioredis.create_redis_pool('redis://127.0.0.1:6379/1sl0')
 
     app['redis'] = red
 
     app.add_routes([
-        web.post('/data', get_data),
+        web.post('/api/data', get_data),
     ])
 
     return app
-
-
 
 
 def main():
