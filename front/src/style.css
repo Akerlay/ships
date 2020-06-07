@@ -1,0 +1,76 @@
+.rec{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.range-slider{
+    margin: 0;
+}
+
+.zizhoba{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    color:red !important;
+}
+
+.range-slider__tooltip{
+    background-color: red;
+}
+
+.range-slider::-webkit-slider-thumb{
+    background-color: black !important;
+}
+
+.range-slider__tooltip{
+    display: none !important;
+}
+
+.leaflet-bottom{
+    display: none;
+}
+
+.danceTime{
+    width: 60px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.fff{
+    display: flex;
+    width: 90% !important;
+    position: absolute !important;
+    z-index: 1000000 !important;
+    left: calc(5% - 15px);
+    background-color: rgba(255, 255, 255, 0.8);
+    top:calc(100vh - 60px);
+    border-radius: 6px;
+    padding: 7px 15px 7px 15px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.31);
+}
+
+.range-slider{
+}
+
+.range-slider__wrap{
+    width: calc(100% - 117px) !important;
+    height: 32px !important;
+    margin-right: 10px;
+}
+
+.range-slider{
+    height: 20px !important;
+}
+
+.range-slider__tooltip__label{
+    background-color: #1278f8 !important;
+}
+
+.range-slider__tooltip__arrow::before{
+    border-bottom-color: #1278f8 !important;
+}
